@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script language="javascript" type="text/javascript" src="/Users/sneheshnag/p5js-osc/p5-basic/Public/libraries/p5.js"></script>
+<script language="javascript" type="text/javascript" src="/Users/sneheshnag/p5js-osc/p5-basic/Public/libraries/p5.dom.js"></script>
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -38,7 +40,18 @@ body {font-family: "Lato", sans-serif}
 
     <p class="w3-justify">I am a musician and music technologist currently based in Atlanta, USA. I am a practitioner of North Indian classical music on the sitar and have primarily been a disciple of my father, Pt. Sugato Nag. </p>
     <p class="w3-justify">At the moment, I am pursuing a Masters degree in Music Technology at the Georgia Institute of Technology, where I am developing creative modes of musical and visual expression. </p>
+    <script>
+      function  setup() {
+        createCanvas(windowWidth, windowHeight);
 
+      }
+      function draw() {
+        background(250);
+        fill(255, 0, 0);
+        noStroke();
+        rect(100, 100, 50, 50);
+      }
+    </script>
 
   <!-- The Bio Section -->
   <div class="w3-blackw3-container w3-content w3-center w3-padding-64" style="max-width:800px; font-family:monospace" id="band">
