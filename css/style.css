@@ -314,14 +314,7 @@ input[type=submit]:hover {
   padding-left: 10px;
   text-align: center;
 }
-.column {
-  position: relative;
-  float: right;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-  padding-right: 100px;
-}
+
 .container_note {
   text-align: center;
   padding-right: 0px;
@@ -399,12 +392,7 @@ input[type=submit]:hover {
     padding-right: 150px;
     padding-left: 130px;
   }
-  .column {
-    position: relative;
-    width: 50%;
-    margin-top: 0px;
-    padding-right: 130px;
-  }
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -470,12 +458,6 @@ input[type=submit]:hover {
     padding-bottom: 20px;
     padding-left: 280px;
 
-  }
-  .column {
-    position: relative;
-    width: 30%;
-    margin-top: 0px;
-    padding-right: 330px;
   }
 
 }
