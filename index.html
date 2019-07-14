@@ -89,65 +89,6 @@
     function windowResized() {
       resizeCanvas(windowWidth, windowHeight*4.2);
     }
-<<<<<<< HEAD
-    function setup(){
-      canvas = createCanvas(windowWidth, windowHeight*4.2);
-      canvas.position(0, 0);
-      canvas.style('z-index', '-1');
-      cols = floor(windowWidth / scl);
-      rows = floor((windowHeight*4.2) / scl);
-      flowfield = new Array(cols * rows);
-      background(255);
-      for (var i = 0; i < 400; i++) {
-        particles[i] = new Particle()
-      }
-    }
-
-
-    function draw() {
-      var yoff = 0;
-      for (var y = 0; y < rows; y++) {
-        var xoff = 0;
-        for (var x = 0; x < cols; x++) {
-          var index = (x + y * cols);
-          var angle = eyes(mouseX, mouseY);
-          // var angle = noise(xoff, yoff, zoff) * TWO_PI;
-          // console.log(angle);
-          var v = p5.Vector.fromAngle(angle);
-          v.setMag(1);
-          flowfield[index] = v;
-          xoff += inc;
-          // stroke(100, 20);
-          // strokeWeight(1);
-          // push();
-          // translate(x * scl, y * scl);
-          // // rotate(v.heading());
-          // rotate(angle);
-          // line(0, 0, scl, 0);
-          // pop();
-        }
-        yoff += inc;
-        zoff += 0.0005;
-      }
-
-      for (var i = 0; i < particles.length; i++) {
-        particles[i].follow(flowfield);
-        particles[i].update();
-        particles[i].edges();
-        particles[i].show();
-      }
-    }
-    function eyes(mx, my) {
-      var ang;
-      if (mx >= windowWidth/2 && my <= windowHeight/2) {
-        ang = atan2(mx - (windowWidth/2), my - (windowHeight/2)) - 1.57;
-      }
-      else {
-        ang = atan2(mx - (windowWidth/2), my - (windowHeight/2)) + 4.71;
-      }
-      return ang;
-
-    }
 
 
   </script>
