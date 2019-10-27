@@ -69,50 +69,90 @@ img {
 
 }
 
+.nav {
+    position: fixed;
+    overflow: hidden;
+    left:0;
+    right:0;
+    background-color: #333;
+    min-height: 45px;
+    margin-bottom: 40px;
+}
 
-header ul{
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* .nav ul{
+
   margin: 0;
   padding: 0;
-}
+} */
 
 /* header */
-header{
-  background-color: #000000;
-  color: #ffffff;
+/* .nav{
+  position: fixed;
 
-  min-height: 45px;
-  margin-bottom: 40px;
+  top: 0px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border: 1px;
+    background-color: rgba(125, 125, 125, 0.5);
 }
 
-header a{
+.nav a{
   color: #ffffff;
 
   font-size: 16px;
   text-decoration: none;
 }
 
-header li{
+.nav li{
   float: left;
   display: inline;
   padding: 0 20px 0 20px;
 }
 
-header nav{
+.nav nav{
   float: left;
   margin-top: 10px;
 }
 
-header .current a{
+.nav .current a{
 
   font: monospace;
 }
 
-header a:hover{
-  /* background-color: #000000; */
+.nav a:hover{
+
   color: #ffffff;
   font-weight: bold;
 
-}
+} */
 
 .intro{
   margin-top: 50px;
@@ -126,10 +166,6 @@ header a:hover{
   /* font-size: 45px; */
 }
 
-#nav{
-  /* max-width: 1500; */
-
-}
 
 .fly-in-text{
   width: 90%;
@@ -408,6 +444,7 @@ input[type=submit]:hover {
     /* position:relative; */
     font: monospace;
     margin-left: 250px;
+    /* padding-top: 50px; */
   }
 
   .container_intro {
@@ -417,11 +454,11 @@ input[type=submit]:hover {
     overflow:hidden;
     font: monospace;
     margin-left: 250px;
-    padding-top: 150px;
+    padding-top: 250px;
 
   }
   .fly-in-text {
-    padding-top: 50px;
+    padding-top: 200px;
     padding-bottom: 50px;
   }
   .fly-in-text li{
@@ -437,6 +474,7 @@ input[type=submit]:hover {
     float: left;
     margin-left: 50px;
     margin-right: 20px;
+    padding-top: 100px;
   }
 
 
