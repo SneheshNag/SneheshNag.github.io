@@ -8,26 +8,53 @@
 <script src="library/p5.dom.js" type="text/javascript"></script>
 <script src="library/p5.sound.js" type="text/javascript"></script>
 <script src="Particle copy.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
 <body>
 
   <!-- Navigation bar -->
-  <header>
-    <div id="nav">
-      <nav>
-        <ul>
-          <li><a href="#" style="font-family: Arial">Home</a></li>
-          <li><a href="#Bio" style="font-family: Arial">Bio</a></li>
-          <li><a href="#Videos" style="font-family: Arial">Videos</a></li>
-          <li><a href="#Contact" style="font-family: Arial">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- <header> -->
+    <!-- <div class="nav">
+          <a href="#" style="font-family: Arial">Home</a>
+          <a href="#Bio" style="font-family: Arial">Bio</a>
+          <a href="#Videos" style="font-family: Arial">Videos</a>
+          <a href="#Contact" style="font-family: Arial">Contact</a>
+    </div> -->
+  <!-- </header> -->
 
+  <!-- <header> -->
+      <div class="nav">
+        <!-- <nav> -->
+          <ul>
+            <li><a href="#" style="font-family: Arial">Home</a></li>
+            <li><a href="#Bio" style="font-family: Arial">Bio</a></li>
+            <li><a href="#Videos" style="font-family: Arial">Videos</a></li>
+            <li><a href="#Contact" style="font-family: Arial">Contact</a></li>
+          </ul>
+        <!-- </nav> -->
+      </div>
+    <!-- </header> -->
+
+  <script>
+    $(window).scroll(
+    {
+        previousTop: 0
+    },
+    function () {
+      var currentTop = $(window).scrollTop();
+      if (currentTop < this.previousTop) {
+          $(".sidebar em").text("Up"); /* optional for demo */
+          $(".nav").css("opacity", "1");
+      } else {
+          $(".sidebar em").text("Down");
+          $(".nav").css("opacity", "0");
+      }
+      this.previousTop = currentTop;
+    });
+  </script>
 
   <!-- Page content -->
-
+<!-- <div class="actual_content"> -->
   <section class="intro">
     <img src="sitar1.png">
 
@@ -45,7 +72,7 @@
         <li>g</li>
       </ul>
   </section>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
   <script>
     $(function() {
       setTimeout(function() {
@@ -170,7 +197,7 @@
       </ul>
 
         <p style="padding-top: 100px">Snehesh started learning North Indian classical music and the sitar at the age of four from his father, sitar virtuoso Pt. Sugato Nag, belonging to the sarod gharana of Senia Shahjahanpore. He also took lessons from Shri Pranab Naha during his early childhood.
-            He was attached to the ITC Sangeet Research Academy (SRA) as a junior scholar from 2010 to 2015 under Guru Padma Bhushan Pandit Buddhadev Das Gupta; advanced lessons from Pt. Das Gupta continued until his passing. In addition to the style of the Senia Shahjahanpore gharana, he infuses the Imdadakhani gharana style, taught by his father, into his playing. He has also learnt the tabla from tabla maestro Pt. Tanmoy Bose and has taken vocal instruction from Shri Sandeep Nag. <br>
+            He was attached to the ITC Sangeet Research Academy (SRA) as a junior scholar from 2010 to 2015 under Guru Padma Bhushan Pandit Buddhadev Das Gupta; advanced lessons from Pt. Das Gupta continued until his passing. In addition to the style of the Senia Shahjahanpore gharana, he infuses the Imdadakhani gharana style, taught by his father, into his playing. Furthermore, he frequently takes talim from the sarod maestro, Pt. Prattyush Banerjee. He has also learned the tabla from tabla maestro Pt. Tanmoy Bose and has taken vocal instruction from Shri Sandeep Nag. <br>
             <br />
             Snehesh has been featured on various newspaper reviews such as The Hindu, wherein his playing has been addressed as one that blends a lot of “emotion, surprise elements, and aesthetic touches”. He has performed to learned audiences in Kolkata, Mumbai, Pune, San Francisco, New York, Seattle, Washington, Madison, Toronto and Vancouver. He stood second in the All India Radio (AIR) music competition, 2014, and was awarded the Acharya Allauddin Khan Memorial Award 2014 at the National Centre for the Performing Arts, Mumbai, in January 2015. He has become a regular performer for All India Radio. He currently is a recipient of the national scholarship recognized by the Ministry of Culture, Government of India. <br>
             <br>
@@ -269,4 +296,4 @@
         <!-- </div> -->
       </div>
     </div>
-  </div>
+  <!-- </div> -->
