@@ -207,6 +207,8 @@ img {
 .fly-in-text.hidden li:nth-child(9) { transform: translateX(-150px) translateY(150px); }
 .fly-in-text.hidden li:nth-child(10) { transform: translateX(110px) translateY(-175px); }
 .fly-in-text.hidden li:nth-child(11) { transform: translateX(-90px) translateY(-70px); }
+.fly-in-text.hidden li:nth-child(12) { transform: translateX(110px) translateY(-175px); }
+.fly-in-text.hidden li:nth-child(13) { transform: translateX(-90px) translateY(-70px); }
 
 
 .Bio-Fly-in{
