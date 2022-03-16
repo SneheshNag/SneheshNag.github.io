@@ -32,9 +32,9 @@ function Particle() {
     b = random(100);
     a = random(100);
     stroke(5, 5);
-    stroke(r,g,b,150);
+    stroke(r,g,b,120);
     //console.log();
-    strokeWeight(0.7);
+    strokeWeight(0.5);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
     this.updatePrev();
   }
