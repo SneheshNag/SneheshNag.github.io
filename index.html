@@ -56,8 +56,8 @@
   <!-- Page content -->
 <!-- <div class="actual_content"> -->
   <section class="intro">
-    <img src="sitar1.png">
-
+    <img src="sitar1.png" usemap="#sitarmap">
+    <!-- <img src="sitar1.png" onclick="playAudio()"> -->
       <ul class="fly-in-text hidden">
         <li>S</li>
         <li>n</li>
@@ -73,7 +73,179 @@
         <li>a</li>
         <li>g</li>
       </ul>
+      <!-- <h1>Snehesh Nag</h1> -->
+      <!-- <h1 class="reveal">
+ Snehesh Nag
+</h1> -->
+
+
+  <map name="sitarmap">
+    <!-- 95,190 -->
+    <!-- <area shape="rect" coords="95,130,190,265" value="PLAY" onclick="playAudio($(this).attr('audionote'))" audionote="audio"> -->
+    <!-- <area shape="rect" coords="0,0,190,265" onclick="document.getElementById('audio').play();"> -->
+    <area class="Gs2" shape="rect" coords="50,-20,80,198" href="">
+    <area class="A2" shape="rect" coords="50,205,80,212" href="">
+    <area class="As2" shape="rect" coords="50,220,80,227" href="">
+    <area class="B2" shape="rect" coords="50,232,80,238" href="">
+    <area class="C3" shape="rect" coords="50,247,80,254" href="">
+    <area class="Cs3" shape="rect" coords="50,261,80,266" href="">
+    <area class="D3" shape="rect" coords="50,272,80,279" href="">
+    <area class="E3" shape="rect" coords="50,293,80,299" href="">
+    <area class="F3" shape="rect" coords="50,303,80,309" href="">
+    <area class="Fs3" shape="rect" coords="50,313,80,319" href="">
+    <area class="G3" shape="rect" coords="50,323,80,329" href="">
+    <area class="Gs3" shape="rect" coords="50,332,80,337" href="">
+    <area class="A3" shape="rect" coords="50,340,80,346" href="">
+    <area class="B3" shape="rect" coords="50,353,80,359" href="">
+    <area class="C4" shape="rect" coords="50,361,80,367" href="">
+    <area class="Cs4" shape="rect" coords="50,369,80,374" href="">
+    <area class="D4" shape="rect" coords="50,377,80,380" href="">
+    <area class="E4" shape="rect" coords="50,382,80,391" href="">
+    <area class="F4" shape="rect" coords="50,398,80,402" href="">
+    <area class="G4" shape="rect" coords="50,403,80,407" href="">
+    <area class="G4" shape="rect" coords="50,419,80,425" href="">
+
+     <!-- =playSound('http://upload.wikimedia.org/wikipedia/en/4/45/ACDC_-_Back_In_Black-sample.ogg' -->
+    <!-- <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"> -->
+  </map>
+
+  <script>
+      // var audio = new Audio("Sitar_D3.aif");
+      // function playAudio() {
+      //   console.log('note')
+      //   var audio = document.getElementById('audio1');
+      //   audio.play();
+      //   // if(note == 'a') {
+      //   //      audio.play();
+      //   //  } else if(note == 'b') {
+      //   //      console.log(note);
+      //   //  }
+      //   // console.log(note)
+      //   // var audio = new Audio(note);
+      //   // audio.play();
+      // }
+      //
+      $(".As2").on("click", function(e){
+          console.log('note')
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_As2.mp3");
+          audio.play();
+      });
+      $(".A2").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_A2.mp3");
+          audio.play();
+      });
+      $(".A3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_A3.mp3");
+          audio.play();
+      });
+      $(".B2").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_B2.mp3");
+          audio.play();
+      });
+      $(".B3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_B3.mp3");
+          audio.play();
+      });
+      $(".Cs3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_Cs3.mp3");
+          audio.play();
+      });
+      $(".Cs4").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_Cs4.mp3");
+          audio.play();
+      });
+      $(".C3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_C3.mp3");
+          audio.play();
+      });
+      $(".C4").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_C4.mp3");
+          audio.play();
+      });
+      $(".Ds3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_Ds3.mp3");
+          audio.play();
+      });
+      $(".D3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_D3.mp3");
+          audio.play();
+      });
+      $(".D4").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_D4.mp3");
+          audio.play();
+      });
+      $(".E3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_E3.mp3");
+          audio.play();
+      });
+      $(".E4").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_E4.mp3");
+          audio.play();
+      });
+      $(".Fs3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_Fs3.mp3");
+          audio.play();
+      });
+      $(".F3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_F3.mp3");
+          audio.play();
+      });
+      $(".F4").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_F4.mp3");
+          audio.play();
+      });
+      $(".Gs2").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_Gs2.mp3");
+          audio.play();
+      });
+      $(".Gs3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_Gs3.mp3");
+          audio.play();
+      });
+      $(".G3").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_G3.mp3");
+          audio.play();
+      });
+      $(".G4").on("click", function(e){
+          e.preventDefault();
+          var audio = new Audio("SitarNotes/Sitar_G4.mp3");
+          audio.play();
+      });
+
+  </script>
+
   </section>
+
+  <!-- <script>
+      function playAudio(note) {
+        // var audio = document.getElementById(note);
+        // audio.play();
+        console.log(note)
+        var audio = new Audio(note);
+        audio.play();
+      }
+  </script> -->
 
   <script>
     $(function() {
@@ -103,6 +275,16 @@
       }, 500);
     })();
   </script>
+
+  <!-- <script>
+      myCanvas.addEventListener('click', function(event) {
+      var rect = myCanvas.getBoundingClientRect();
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top;
+      console.log("x: " + x + " y: " + y);
+      }, false);
+
+  </script> -->
 
   <script>
     var canvas;
@@ -178,14 +360,28 @@
 
     }
 
+    function mouseClicked() {
+      console.log(mouseX, mouseY)
+      // prevent default
+      return false;
+    }
+
+    // myCanvas.addEventListener('click', function(event) {
+    // var rect = myCanvas.getBoundingClientRect();
+    // var x = event.clientX - rect.left;
+    // var y = event.clientY - rect.top;
+    // console.log("x: " + x + " y: " + y);
+    // }, false);
+
 
   </script>
 
   <div id="Content-after">
       <div class="container_intro" style="padding-bottom: 60px">
-        <p>I am a musician and music technologist currently based in Atlanta, USA. I am a practitioner of North Indian classical music on the sitar and have primarily been a disciple of my father, Pt. Sugato Nag.
+        <p>I am a musician and researcher currently based in Baltimore, USA. I am a practitioner of North Indian classical music on the sitar and have primarily been a disciple of my father, Pt. Sugato Nag.
         <br />
-        I recently graduated from a Masters degree in Music Technology from the Georgia Institute of Technology, and regularly engage in creative endeavors such as music production and sound design. </p>
+        <!-- I recently graduated from a Masters degree in Music Technology from the Georgia Institute of Technology, and regularly engage in creative endeavors such as music production and sound design. </p> -->
+        I also do research for a startup that develops predictive models based on human brain imaging data. </p>
       </div>
 
 
@@ -193,13 +389,14 @@
 
     <div class="container" style="padding-top:50px" id="Bio">
       <!-- <h2 align="center" style="font-weight: 300;font-size: 30px"> Bio </h2> -->
-      <ul class="Bio-Fly-in hidden" style="padding-top: 120px; padding-bottom: 100px">
+      <ul class="Bio-Fly-in hidden" style="padding-top: 120px; padding-bottom: 120px">
         <li>B</li>
         <li>i</li>
         <li>o</li>
       </ul>
+      <!-- <h1>Bio</h1> -->
 
-        <p style="padding-top: 100px">Snehesh started learning North Indian classical music and the sitar at the age of four from his father, sitar virtuoso Pt. Sugato Nag, belonging to the sarod gharana of Senia Shahjahanpore. He also took lessons from Shri Pranab Naha during his early childhood.
+        <p style="padding-top: 50px">Snehesh started learning North Indian classical music and the sitar at the age of four from his father, sitar virtuoso Pt. Sugato Nag, belonging to the sarod gharana of Senia Shahjahanpore. He also took lessons from Shri Pranab Naha during his early childhood.
             He was attached to the ITC Sangeet Research Academy (SRA) as a junior scholar from 2010 to 2015 under Guru Padma Bhushan Pandit Buddhadev Das Gupta; advanced lessons from Pt. Das Gupta continued until his passing. In addition to the style of the Senia Shahjahanpore gharana, he infuses the Imdadakhani gharana style, taught by his father, into his playing. Furthermore, he frequently takes talim from the sarod maestro, Pt. Prattyush Banerjee. He has also learned the tabla from tabla maestro Pt. Tanmoy Bose and has taken vocal instruction from Shri Sandeep Nag. <br>
             <br />
             Snehesh has been featured in various newspaper reviews such as The Hindu, wherein his playing has been addressed as one that blends a lot of “emotion, surprise elements, and aesthetic touches”. He has performed to learned audiences in Kolkata, Mumbai, Pune, San Francisco, New York, Seattle, Washington, Madison, Toronto and Vancouver. He stood second in the All India Radio (AIR) music competition, 2014, and was awarded the Acharya Allauddin Khan Memorial Award 2014 at the National Centre for the Performing Arts, Mumbai, in January 2015. He has become a regular performer for All India Radio. He currently is a recipient of the national scholarship recognized by the Ministry of Culture, Government of India. <br>
@@ -227,9 +424,31 @@
         <br />
         <br />
         <div id="video_container">
+
+          <div class="box">
+            <iframe width="500" height="283" src="https://www.youtube.com/embed/d18G9GMO0Co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="w3-container w3-white"> -->
+              <!-- <p><b>Viewcy virtual concerts, 2022</b></p> -->
+
+              <p>Raga Jog</p>
+
+            <!-- </div> -->
+          </div>
+
+          <div class="box">
+            <iframe width="500" height="283" src="https://www.youtube.com/embed/PQSqrKyLElk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="w3-container w3-white"> -->
+              <!-- <p><b>Viewcy virtual concerts, 2022</b></p> -->
+
+              <p>Raga Yaman</p>
+
+
+            <!-- </div> -->
+          </div>
+
           <div class="box">
             <iframe width="500" height="283" src="https://www.youtube.com/embed/4Ny9RJztc64" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <!-- <div style="text-align: center; float: left"> -->
-              <p><b>South Asian Classical Music Society (Chicago), 2019</b></p>
+              <!-- <p><b>South Asian Classical Music Society (Chicago), 2019</b></p> -->
 
               <p>Raga Pilu Teentaal <br />
               <br />
@@ -240,7 +459,7 @@
           <div class="box">
             <iframe width="500" height="283" src="https://www.youtube.com/embed/AovWj3pQ3PI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <!-- <div style="text-align: center; float: left"> -->
-              <p><b>Maitreyee Music Circle, 2015</b></p>
+              <!-- <p><b>Maitreyee Music Circle, 2015</b></p> -->
 
               <p>Raga Jhinjhoti Drut Teentaal <br />
               <br />
@@ -248,16 +467,8 @@
 
             <!-- </div> -->
           </div>
-          <div class="box">
-            <iframe width="500" height="283" src="https://www.youtube.com/embed/OUoaS7cnDEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!-- <div class="w3-container w3-white"> -->
-              <p><b>The India Habitat Centre, 2017</b></p>
 
-              <p>Raga Shyam Kalyan Alaap and Vilambit Teentaal</p>
-
-            <!-- </div> -->
-          </div>
-          <div class="box">
+          <!-- <div class="box">
             <iframe width="500" height="283" src="https://www.youtube.com/embed/Uv6-PN9Ys0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
               <p><b>ITC Sangeet Research Academy, 2013</b> </p>
@@ -267,7 +478,7 @@
               </p>
 
             <!-- </div> -->
-          </div>
+          </div> -->
           </div>
       </div>
     </section>
@@ -292,7 +503,7 @@
 
         <div class="row">
           <!-- <div> -->
-            <i style="width:100px; text-align:left"></i> 1071B Terrell St NW, Atlanta, GA 30318, US <br>
+            <i style="width:100px; text-align:left"></i> 3006 Barclay Street, Baltimore, MD 21218, US <br>
             <i style="width:10px"></i> Phone: +1 (470) 357-3568<br>
 
           </div>

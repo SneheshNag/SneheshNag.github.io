@@ -27,10 +27,14 @@ function Particle() {
   }
 
   this.show = function() {
+    r = random(255);
+    g = random(100, 200);
+    b = random(100);
+    a = random(100);
     stroke(5, 5);
-    //stroke(255, 100);
+    stroke(r,g,b,120);
     //console.log();
-    strokeWeight(0.7);
+    strokeWeight(0.4);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
     this.updatePrev();
   }

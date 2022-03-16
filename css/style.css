@@ -6,6 +6,12 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column; */
 }
 
   .container{
@@ -42,7 +48,7 @@ body {
     max-width: 400px;
     width: 100%;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 0px;
     padding-left: 0px;
     padding-right: 100px;
     padding-top: 0px;
@@ -54,9 +60,10 @@ img {
   width: 50px;
   height: 175px;
   float: left;
-  padding-top: 20px;
-  margin-left: 10px;
-  margin-right: 20px;
+  /* padding-top: 20px; */
+  margin-top: 15px;
+  /* margin-left: 10px;
+  margin-right: 20px; */
 }
 
 #video_container {
@@ -157,8 +164,30 @@ img {
 .intro{
   margin-top: 50px;
   width: 100%;
+  /* width: 20%; */
+  /* top: 50%;
+  position: absolute;
+  left: 40%;
+  border-bottom: 5px solid white;
+  overflow: hidden;
+  animation: animate 2s linear forwards; */
   /* margin: 0 auto; */
 }
+
+/* @keyframes animate {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+            30% {
+                width: 50px;
+                height: 0px;
+            }
+            60% {
+                width: 50px;
+                height: 80px;
+            }
+        } */
 
 .fly-in-text li:hover{
   /* color: #ffffff; */
@@ -230,6 +259,82 @@ img {
   opacity: 1;
   transition: all 2.5s ease;
 }
+/* :root {
+ --animation-delay: 0;
+ --duration: 800ms;
+ --iterations: 1;
+}
+.reveal,
+.reveal::after {
+         animation-delay: 0;
+         animation-delay: var(--animation-delay, 2s);
+         animation-iteration-count: 1;
+         animation-iteration-count: var(--iterations, 1);
+         animation-duration: 800ms;
+         animation-duration: var(--duration, 800ms);
+         animation-fill-mode: both;
+         animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.reveal {
+ position: relative;
+ font-size: 6vw;
+ animation-name: text;
+ color: #FFF;
+ white-space: nowrap;
+ cursor: default;
+ text-transform: uppercase;
+
+}
+
+.reveal::after {
+ content: "";
+ position: absolute;
+ z-index: 999;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: black; # f2f98b
+         transform: scaleX(0);
+         transform-origin: 0 50%;
+ pointer-events: none;
+         animation-name: revealer;
+ }
+
+
+
+@keyframes text {
+ from {
+         clip-path: inset(0 100% 0 0);
+ }
+ to {
+         clip-path: inset(0 0 0 0);
+ }
+}
+
+
+
+
+@keyframes revealer {
+
+ 0%, 50% {
+         transform-origin: 0 50%;
+ }
+
+ 60%, 100% {
+         transform-origin: 100% 50%;
+ }
+
+
+ 60% {
+         transform: scaleX(1);
+ }
+
+ 100% {
+         transform: scaleX(0);
+ }
+} */
 
 .Bio-Fly-in li:last-child{
   margin-right: 0;
