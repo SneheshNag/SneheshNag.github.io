@@ -52,10 +52,10 @@ body.home {
     font-family: serif;
     vertical-align: middle;
     display: inline-block;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5em;
     /* margin: 5px 0 15px; */
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 30px;
     /* list-style-position: inside; */
     /* padding-top: 30px; */
@@ -100,7 +100,7 @@ ul.burst li::marker {
   position: absolute;
   color: #ffffff;
   /* color: #000000; */
-  left: 30%;
+  left: 26%;
   margin-top: 60px;
   padding-top: 100px;
   transform: translateX(-50%) translateY(-50%);
@@ -250,21 +250,30 @@ content: url("swan_sitar_1.svg")
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 468px) /*768*/ {
   .main {
     display: inline;
   }
 
   .container_intro {
     width:65%;
-    margin:auto;
-    text-align: center;
+    /* margin:auto; */
+    float: left;
+    text-align: left;
+    font-weight:normal;
     overflow:hidden;
+    padding-left: 60px;
 
     /* position:relative; */
-    font: monospace;
-    margin-left: 150px;
+    font-family: "EB Garamond", serif;
+    /* font-family: serif; */
+    font-style: italic;
+    font-size: 21px;
+    color: #ffffff;
+  }
 
+  .fly-in-text{
+    left:40%;
   }
 }
 
@@ -288,13 +297,17 @@ content: url("swan_sitar_1.svg")
     font-family: "EB Garamond", serif;
     /* font-family: serif; */
     font-style: italic;
-    font-size: 21px;
+    font-size: 24px;
     color: #ffffff;
 
     /* color: #000000; */
     margin-left: 150px;
     padding-top: 200px;
     /* top: -400px; */
+    }
+
+    .fly-in-text{
+      left:26%;
     }
     /* { */
     a:link {
