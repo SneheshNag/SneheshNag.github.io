@@ -36,17 +36,7 @@ function Particle() {
   }
 
   this.show = function() {
-    // r = random(255);
-    // g = random(100, 200);
-    // b = random(100);
-    // r = 10;
-    // g = 10;
-    // b = 10;
-    // a = random(100);
-    // stroke(2, 5);
-    // stroke(r,g,b,50);
     stroke(this.r,this.g,this.b,10);
-    //console.log();
     strokeWeight(1.2);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
     this.updatePrev();
