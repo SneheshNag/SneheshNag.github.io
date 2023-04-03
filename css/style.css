@@ -1,11 +1,31 @@
-body {
-  font-family: monospace, sans-serif, Helvetica, Arial;
-  font-size: 15px;
+html {
+    height: 100%;
+}
+
+body.home {
+  font-family: monospace, sans-serif, cursive, fantasy, fangsong, emoji, Lucida;
+  /* font-family: */
+  /* font-size: 15px; */
   line-height: 1.5;
+  width:100%;
+  /* height: 300px; */
+  display: flex;
+  min-height: 100%;
+  /* background-image: url("SneheshNag_2-removebg.png"); */
+  /* opacity: 0.75; */
   background-color: #ffffff;
   padding: 0;
   margin: 0;
   text-align: center;
+
+  /* background: rgba(5, 5, 20, 1);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  perspective: 800px; */
 
   /* display: flex;
   align-items: center;
@@ -14,30 +34,79 @@ body {
   flex-direction: column; */
 }
 
-  .container{
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+    margin-top: 70px;
+    width: 100%;
+
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    /* width: 20%; */
+    /* top: 50%;
+    position: absolute;
+    left: 40%;
+    border-bottom: 5px solid white;
+    overflow: hidden;
+    animation: animate 2s linear forwards; */
+    /* margin: 0 auto; */
+  }
+
+  .container_intro {
+
+    /* flex-basis: 60%; */
     position: relative;
-    width:100%;
+    width:40%;
     margin:auto;
-    text-align: center;
+    float:left;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    overflow:hidden;
+    padding-top: 200px;
+    padding-left: 120px;
+    font: cursive;
+    /* margin-top: 100px; */
+  }
+
+  /* .container{
+    position: relative;
+    width:75%;
+    margin:auto;
+    text-align: left;
     overflow:hidden;
     font: sans-serif;
-    /* display: none; */
-    /* opacity: 0; */
-  }
-  .container_intro {
-    position: relative;
-    width:100%;
-    margin:auto;
-    text-align: center;
-    overflow:hidden;
-    padding-top: 40px;
-    font: monospace;
-    margin-top: 50px;
-  }
+
+  } */
+
+    /* canvas {
+    display: block;
+    background-image: url("self_with_sitar_bw.jpg");
+    background-size: contain;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+  } */
 
 
 
-  #Videos{
+    /* .content-after{
+    } */
+
+    /* .bg {
+      background-image: url("self_with_sitar_bw.jpg");
+
+      height: 100%;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    } */
+
+
+  /* #Videos{
     margin-top: 50px;
 
   }
@@ -54,125 +123,81 @@ body {
     padding-top: 0px;
     padding-bottom: 20px;
 
+  } */
+
+/* .intro_pic {
+  width: 50px;
+  height: 75px;
+
+  margin-top: 15px;
+
+} */
+
+
+
+
+  .sitar_pic {
+    /* display: flex; */
+    /* flex-basis: 40% */
+    /* position: absolute; */
+    /* width: 100%; */
+    width: 135px;
+    height: 475px;
+    /* width: 75px;
+    height: 275px; */
+    float: right;
+    padding-top: 120px;
+    /* margin-top: 15px; */
+    /* padding-left: 50px; */
+    /* margin-right: 70px; */
+    padding-right: 280px;
   }
 
-img {
-  width: 50px;
-  height: 175px;
-  float: left;
-  /* padding-top: 20px; */
-  margin-top: 15px;
-  /* margin-left: 10px;
-  margin-right: 20px; */
+  ul.burst {
+    /* list-style-image: url('bullet_point_2.png'); */
+    font-family: serif;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.5em;
+    /* margin: 5px 0 15px; */
+    padding-top: 50px;
+    padding-left: 30px;
+    /* list-style-position: inside; */
+    /* padding-top: 30px; */
+  }
+
+
+/* ul.burst li {
+            list-style-type: '>';
+        } */
+
+ul.burst li {
+  vertical-align: middle;
+  /* display: inline-block; */
+  padding-left: 1rem;
+  /* padding-bottom: 5px; */
+  padding-top: .5rem;
 }
 
-#video_container {
-  background-color: #F5F5F5;
-  border-style: groove;
-  text-align: center;
-  padding-left: 0px;
-  padding-top: 5px;
-  padding-bottom: 30px;
+ul.burst li::marker {
+  /* color:#000000 */
+  /* display: inline-block; */
 
-}
-
-.nav {
-    position: fixed;
-    overflow: hidden;
-    left:0;
-    right:0;
-    background-color: #333;
-    min-height: 45px;
-    margin-bottom: 10px;
-}
+  vertical-align: middle;
+  padding-top: 15px;
+  /* margin-top: 15px; */
+  /* content: url("swan_sitar_1_white.svg") */
+  content: url("bullet_point_2.svg") /* bullet_point_2.svg */
+  /* vertical-align: middle; */
+  /* padding-top: 5px; */
 
 
-.nav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.nav li{
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
 }
 
 
-.nav a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
 
-.nav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* .nav ul{
-
-  margin: 0;
-  padding: 0;
-} */
-
-/* header */
-/* .nav{
-  position: fixed;
-
-  top: 0px;
-    left: 0;
-    right: 0;
-    height: 50px;
-    border: 1px;
-    background-color: rgba(125, 125, 125, 0.5);
-}
-
-.nav a{
-  color: #ffffff;
-
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.nav li{
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-
-.nav nav{
-  float: left;
-  margin-top: 10px;
-}
-
-.nav .current a{
-
-  font: monospace;
-}
-
-.nav a:hover{
-
-  color: #ffffff;
-  font-weight: bold;
-
-} */
-
-.intro{
-  margin-top: 50px;
-  width: 100%;
-  /* width: 20%; */
-  /* top: 50%;
-  position: absolute;
-  left: 40%;
-  border-bottom: 5px solid white;
-  overflow: hidden;
-  animation: animate 2s linear forwards; */
-  /* margin: 0 auto; */
-}
 
 /* @keyframes animate {
             0% {
@@ -189,30 +214,46 @@ img {
             }
         } */
 
+
+
 .fly-in-text li:hover{
   /* color: #ffffff; */
   font-style: italic;
   /* font-size: 45px; */
 }
 
+/* h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
 
 .fly-in-text{
-  width: 90%;
+  width: 100%;
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   list-style: none;
   position: absolute;
-  left: 48%;
-  margin-top: 40px;
+  color: #ffffff;
+  /* color: #000000; */
+  left: 30%;
+  margin-top: 60px;
   padding-top: 100px;
   transform: translateX(-50%) translateY(-50%);
 }
 
 .fly-in-text li{
   display: inline-block;
-  margin-right: 2px;
-  font-family: monospace;
-  font-weight: 300;
-  font-size: 25px;
-  color: #000000;
+  margin-right: -8px;
+  font-family: cursive;
+  /* monospace; */
+  font-weight: 500;
+  font-size: 65px;
+  /* color: #000000; */
+  color: #ffffff;
   opacity: 1;
   transition: all 2.5s ease;
 }
@@ -235,199 +276,128 @@ img {
 .fly-in-text.hidden li:nth-child(8) { transform: translateX(60px) translateY(115px); }
 .fly-in-text.hidden li:nth-child(9) { transform: translateX(-150px) translateY(150px); }
 .fly-in-text.hidden li:nth-child(10) { transform: translateX(110px) translateY(-175px); }
-.fly-in-text.hidden li:nth-child(11) { transform: translateX(-90px) translateY(-70px); }
-.fly-in-text.hidden li:nth-child(12) { transform: translateX(110px) translateY(-175px); }
-.fly-in-text.hidden li:nth-child(13) { transform: translateX(-90px) translateY(-70px); }
+.fly-in-text.hidden li:nth-child(11) { transform: translateX(110px) translateY(-175px); }
+.fly-in-text.hidden li:nth-child(12) { transform: translateX(-90px) translateY(-70px); }
+.fly-in-text.hidden li:nth-child(13) { transform: translateX(110px) translateY(-175px); }
+.fly-in-text.hidden li:nth-child(14) { transform: translateX(-90px) translateY(-70px); }
 
 
-.Bio-Fly-in{
-  width: 100%;
-  list-style: none;
-  position: absolute;
-  left: 48%;
-  margin-top: 10px;
-  transform: translateX(-50%) translateY(-50%);
-}
+/* –*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*– */
+/* –*–*–*–*–*–*–*–CONCERTS PAGE–*–*–*–*–*–*–*– */
+/* –*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*– */
 
-.Bio-Fly-in li{
-  display: inline-block;
-  margin-right: 2px;
-  font-family: monospace;
-  font-weight: 300;
-  font-size: 30px;
-  color: #000000;
-  opacity: 1;
-  transition: all 2.5s ease;
-}
-/* :root {
- --animation-delay: 0;
- --duration: 800ms;
- --iterations: 1;
-}
-.reveal,
-.reveal::after {
-         animation-delay: 0;
-         animation-delay: var(--animation-delay, 2s);
-         animation-iteration-count: 1;
-         animation-iteration-count: var(--iterations, 1);
-         animation-duration: 800ms;
-         animation-duration: var(--duration, 800ms);
-         animation-fill-mode: both;
-         animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
-}
-
-.reveal {
- position: relative;
- font-size: 6vw;
- animation-name: text;
- color: #FFF;
- white-space: nowrap;
- cursor: default;
- text-transform: uppercase;
-
-}
-
-.reveal::after {
- content: "";
- position: absolute;
- z-index: 999;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- background-color: black; # f2f98b
-         transform: scaleX(0);
-         transform-origin: 0 50%;
- pointer-events: none;
-         animation-name: revealer;
- }
-
-
-
-@keyframes text {
- from {
-         clip-path: inset(0 100% 0 0);
- }
- to {
-         clip-path: inset(0 0 0 0);
- }
-}
-
-
-
-
-@keyframes revealer {
-
- 0%, 50% {
-         transform-origin: 0 50%;
- }
-
- 60%, 100% {
-         transform-origin: 100% 50%;
- }
-
-
- 60% {
-         transform: scaleX(1);
- }
-
- 100% {
-         transform: scaleX(0);
- }
+/* * {
+  margin:0;
+  padding:0;
 } */
-
-.Bio-Fly-in li:last-child{
-  margin-right: 0;
+body.concerts {
+  /* background-image: url('multiple_sitars_bg.png');
+  opacity: 0.5;
+  background-size: cover;
+  height: 100vh; */
 }
 
-.Bio-Fly-in.hidden li{
-  opacity:0;
+
+.image-box {
+  position: relative;
 }
 
-.Bio-Fly-in.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
-.Bio-Fly-in.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
-.Bio-Fly-in.hidden li:nth-child(3) { transform: translateX(-100px) translateY(80px); }
-
-.Videos-Fly-in{
-  width: 100%;
-  list-style: none;
+.background-image,
+.image-box__overlay {
   position: absolute;
-  left: 50%;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  /* padding-bottom:50px */
-  /* top: 50%; */
-  transform: translateX(-50%) translateY(-50%);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.Videos-Fly-in li{
-  display: inline-block;
-  /* letter-spacing: 1.5px; */
-  margin-right: 2px;
+
+.background-image {
+  background-image: url('multiple_sitars_bg.png');
+  opacity: 0.5;
+  background-size: cover;
+  height: 100vh;
+  z-index: 1;
+}
+
+.image-box__overlay {
+  /* background: rgba(0, 0, 0, 0.5); */
+  z-index: 2;
+}
+
+.concerts-text {
+  position: relative;
+  z-index: 3;
+  color: black;
+  padding-top: 50px;
+  padding-left: 100px;
+  min-height: 100vh;
+}
+
+.concerts-text h1 {
   font-family: monospace;
-  font-weight: 300;
-  font-size: 30px;
-  color: #000000;
-  opacity: 1;
-  transition: all 2.5s ease;
+  font-size: 33px;
 }
 
-.Videos-Fly-in li:last-child{
-  margin-right: 0;
-}
-
-.Videos-Fly-in.hidden li{
-  opacity:0;
-}
-
-.Videos-Fly-in.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
-.Videos-Fly-in.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
-.Videos-Fly-in.hidden li:nth-child(3) { transform: translateX(-100px) translateY(80px); }
-.Videos-Fly-in.hidden li:nth-child(4) { transform: translateX(-200px) translateY(-200px); }
-.Videos-Fly-in.hidden li:nth-child(5) { transform: translateX(20px) translateY(100px); }
-.Videos-Fly-in.hidden li:nth-child(6) { transform: translateX(-100px) translateY(80px); }
-
-.Contact-Fly-in{
-  width: 100%;
-  list-style: none;
-  position: absolute;
-  left: 48%;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.Contact-Fly-in li{
-  display: inline-block;
-  margin-right: 2px;
+ul.concerts-burst {
+  /* list-style-image: url('bullet_point_2.png'); */
   font-family: monospace;
-  font-weight: 300;
-  font-size: 30px;
-  color: #000000;
-  opacity: 1;
-  transition: all 2.5s ease;
+  font-size: 19px;
+  line-height: 1.5em;
+  /* margin: 5px 0 15px; */
+  padding-top: 10px;
+  padding-left: 30px;
+  /* padding-top: 30px; */
 }
 
-.Contact-Fly-in li:last-child{
-  margin-right: 0;
+
+/* ul.burst li {
+          list-style-type: '>';
+      } */
+
+ul.concerts-burst li {
+padding-left: .5rem;
+padding-bottom: 5px;
 }
 
-.Contact-Fly-in.hidden li{
-  opacity:0;
+ul.concerts-burst li::marker {
+/* color:#000000 */
+content: url("swan_sitar_1.svg")
 }
 
-.Contact-Fly-in.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
-.Contact-Fly-in.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
-.Contact-Fly-in.hidden li:nth-child(3) { transform: translateX(-100px) translateY(80px); }
-.Contact-Fly-in.hidden li:nth-child(4) { transform: translateX(-200px) translateY(-200px); }
-.Contact-Fly-in.hidden li:nth-child(5) { transform: translateX(20px) translateY(100px); }
-.Contact-Fly-in.hidden li:nth-child(6) { transform: translateX(-100px) translateY(80px); }
-.Contact-Fly-in.hidden li:nth-child(7) { transform: translateX(-100px) translateY(80px); }
+/* –*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*– */
+/* –*–*–*–*–*–*–*PRESS PAGE–*–*–*–*–*–*–*– */
+/* –*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*– */
+
+.press-text {
+  position: relative;
+  z-index: 3;
+  color: black;
+  padding-top: 20px;
+  padding-left: 100px;
+  min-height: 100vh;
+}
+
+.press-text p {
+  font-family: serif;
+  font-size: 16px;
+  /* padding-top:10px; */
+  padding-bottom:35px;
+  width:70%;
+}
+
+.press-text h4 {
+  font-family: serif;
+  font-size: 20px;
+  /* padding-top:10px;
+  padding-bottom:35px;
+  width:70%; */
+}
 
 /* Style inputs */
-input[type=text], select, textarea {
+/* input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
+  padding: 6px;
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -439,7 +409,6 @@ input[type=submit] {
   border: 1px solid #ccc;
   color: black;
   padding: 12px 20px;
-  /* border: none; */
   cursor: pointer;
 }
 
@@ -459,16 +428,19 @@ input[type=submit]:hover {
 }
 
 .container_note {
-  text-align: center;
+  text-align: right;
   padding-right: 0px;
-}
+} */
 
 
 
 @media only screen and (min-width: 768px) {
-  .intro {
+  .main {
     display: inline;
   }
+  /* body {
+    top: -400px;
+  } */
   .container{
     position: relative;
     width:65%;
@@ -483,6 +455,7 @@ input[type=submit]:hover {
     margin:auto;
     text-align: center;
     overflow:hidden;
+
     /* position:relative; */
     font: monospace;
     margin-left: 150px;
@@ -496,7 +469,7 @@ input[type=submit]:hover {
   }
 
 
-  #Videos{
+  /* #Videos{
     margin-top: 50px;
 
   }
@@ -518,7 +491,7 @@ input[type=submit]:hover {
     margin-bottom: 50px;
   }
   .fly-in-text li{
-    font-size: 35px;
+    font-size: 50px;
   }
   #video_container {
     background-color: #F5F5F5;
@@ -534,43 +507,77 @@ input[type=submit]:hover {
     float:left;
     padding-right: 150px;
     padding-left: 130px;
-  }
+  } */
 
 }
 
 @media only screen and (min-width: 1000px) {
-  .intro {
+  .main {
     display: inline;
     /* margin-top: 100px; */
+    /* top: -400px; */
   }
+    /* body {
+      top: -400px;
+    } */
 
-  .container{
+  /* .container{
     width:65%;
     margin:auto;
     text-align: center;
     overflow:hidden;
-    /* position:relative; */
+    position:relative;
     font: monospace;
     margin-left: 250px;
-    /* padding-top: 50px; */
-  }
+    padding-top: 50px;
+  } */
 
   .container_intro {
-    width:65%;
+    /* display: flex; */
+    /* flex-basis: 80%; */
+    width:45%;
     margin:auto;
-    text-align: center;
+    float: left;
+    text-align: left;
+    font-weight:normal;
     overflow:hidden;
-    font: monospace;
-    margin-left: 250px;
-    padding-top: 250px;
+    font-family: "EB Garamond", serif;
+    /* font-family: serif; */
+    font-style: italic;
+    font-size: 21px;
+    color: #ffffff;
 
-  }
-  .fly-in-text {
+    /* color: #000000; */
+    margin-left: 150px;
+    padding-top: 200px;
+    /* top: -400px; */
+    }
+    /* { */
+    a:link {
+    display: inline-block;
+    color: #ffffff;
+
+    /* background-color: transparent;
+    text-decoration: none; */
+    }
+
+    a:hover {
+    font-weight: bold;
+    /* color: #010101; */
+    /* background-color: transparent; */
+    text-decoration: underline;
+    }
+    /* } */
+
+
+
+
+  /* .fly-in-text {
     padding-top: 200px;
     padding-bottom: 50px;
   }
   .fly-in-text li{
-    font-size: 40px;
+    font-size: 50px;
   }
   .fly-in-text li:hover{
     font-style: italic;
@@ -604,6 +611,6 @@ input[type=submit]:hover {
     padding-bottom: 20px;
     padding-left: 280px;
 
-  }
+  } */
 
 }

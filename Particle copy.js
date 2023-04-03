@@ -3,6 +3,9 @@ function Particle() {
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
   this.maxspeed = 1;
+  this.r = 10;
+  this.g = 10;
+  this.b = 10;
 
   this.prevPos = this.pos.copy();
 
@@ -26,15 +29,25 @@ function Particle() {
     this.acc.add(force);
   }
 
+  this.updateColor = function(r, g, b) {
+    this.r = r;
+    this.g = g;
+    this.b = b;
+  }
+
   this.show = function() {
-    r = random(255);
-    g = random(100, 200);
-    b = random(100);
-    a = random(100);
-    stroke(5, 5);
-    stroke(r,g,b,120);
+    // r = random(255);
+    // g = random(100, 200);
+    // b = random(100);
+    // r = 10;
+    // g = 10;
+    // b = 10;
+    // a = random(100);
+    // stroke(2, 5);
+    // stroke(r,g,b,50);
+    stroke(this.r,this.g,this.b,20);
     //console.log();
-    strokeWeight(0.5);
+    strokeWeight(2.7);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
     this.updatePrev();
   }
