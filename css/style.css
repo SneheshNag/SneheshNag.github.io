@@ -193,14 +193,14 @@ body.concerts {
 }
 
 .concerts-text h1 {
-  font-family: monospace;
+  font-family: serif;
   font-size: 33px;
 }
 
 ul.concerts-burst {
 
-  font-family: monospace;
-  font-size: 19px;
+  font-family: serif;
+  font-size: 20px;
   line-height: 1.5em;
   /* margin: 5px 0 15px; */
   padding-top: 10px;
