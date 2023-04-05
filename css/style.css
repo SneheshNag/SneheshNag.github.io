@@ -250,7 +250,7 @@ content: url("swan_sitar_1.svg")
 }
 
 
-@media only screen and (min-width: 468px) /*768*/ {
+@media only screen and (max-width: 480px) /*768*/ {
   .main {
     display: inline;
   }
@@ -277,7 +277,7 @@ content: url("swan_sitar_1.svg")
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 769px) {
   .main {
     display: inline;
     /* margin-top: 100px; */
