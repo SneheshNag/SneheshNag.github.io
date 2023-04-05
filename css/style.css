@@ -250,7 +250,7 @@ content: url("swan_sitar_1.svg")
 }
 
 
-@media only screen and (max-width: 480px) /*768*/ {
+@media only screen and (max-width: 768px) /*768*/ {
   .main {
     display: inline;
   }
