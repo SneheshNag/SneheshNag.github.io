@@ -275,6 +275,10 @@ content: url("swan_sitar_1.svg")
   .fly-in-text{
     left:40%;
   }
+
+  .fly-in-text li{
+    font-size:50px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
