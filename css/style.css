@@ -263,14 +263,14 @@ content: url("swan_sitar_1.svg")
     font-weight:normal;
     overflow:hidden;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 180px;
     /* position:relative; */
     font-family: "EB Garamond", serif;
     /* font-family: serif; */
     font-style: italic;
     font-size: 20px;
-    /* color: #ffffff; */
-    color: #000000;
+    color: #ffffff;
+    /* color: #000000; */
   }
 
   .fly-in-text{
@@ -282,7 +282,7 @@ content: url("swan_sitar_1.svg")
   }
 
   ul.burst {
-    font-size:50px;
+    font-size:20px;
     padding-top:15px;
   }
 }
