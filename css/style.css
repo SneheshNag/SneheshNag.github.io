@@ -81,7 +81,13 @@ ul.burst li::marker {
   content: url("bullet_point_2.svg") /* bullet_point_2.svg */
 }
 
-
+p.credits {
+  padding-top:30px;
+  font-family:serif;
+  font-style:italics;
+  font-size:19px;
+}
+/* "padding-top:30px;font-family:serif;font-style:italics;font-size:19px;" */
 
 
 .fly-in-text li:hover{
@@ -110,6 +116,7 @@ ul.burst li::marker {
   display: inline-block;
   margin-right: -8px;
   font-family: cursive;
+  min-width: 1ch;
   /* monospace; */
   font-weight: 500;
   font-size: 65px;
@@ -141,7 +148,6 @@ ul.burst li::marker {
 .fly-in-text.hidden li:nth-child(12) { transform: translateX(-90px) translateY(-70px); }
 .fly-in-text.hidden li:nth-child(13) { transform: translateX(110px) translateY(-175px); }
 .fly-in-text.hidden li:nth-child(14) { transform: translateX(-90px) translateY(-70px); }
-
 
 /* –*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*–*– */
 /* –*–*–*–*–*–*–*–CONCERTS PAGE–*–*–*–*–*–*–*– */
@@ -262,8 +268,8 @@ content: url("swan_sitar_1.svg")
     text-align: left;
     font-weight:normal;
     overflow:hidden;
-    padding-left: 20px;
-    padding-top: 180px;
+    padding-left: 18px;
+    padding-top: 120px;
     /* position:relative; */
     font-family: "EB Garamond", serif;
     /* font-family: serif; */
@@ -275,6 +281,7 @@ content: url("swan_sitar_1.svg")
 
   .fly-in-text{
     left:40%;
+    padding-top:30px;
   }
 
   .fly-in-text li{
@@ -282,8 +289,13 @@ content: url("swan_sitar_1.svg")
   }
 
   ul.burst {
-    font-size:20px;
-    padding-top:15px;
+    font-size:16px;
+    padding-top:5px;
+  }
+
+  p.credits {
+    font-size:13px;
+    padding-top:20px;
   }
 }
 

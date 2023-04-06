@@ -12,42 +12,24 @@
 
 <body class="home">
 
-    <ul class="fly-in-text hidden">
-      <li>S</li>
-      <li>n</li>
-      <li>e</li>
-      <li>h</li>
-      <li>e</li>
-      <li>s</li>
-      <li>h</li>
-      <li> </li>
-      <li> </li>
-      <li> </li>
-      <li> </li>
-      <li>N</li>
-      <li>a</li>
-      <li>g</li>
-    </ul>
+  <ul class="fly-in-text hidden">
+    <li>S</li>
+    <li>n</li>
+    <li>e</li>
+    <li>h</li>
+    <li>e</li>
+    <li>s</li>
+    <li>h</li>
+    <li> </li>
+    <li>N</li>
+    <li>a</li>
+    <li>g</li>
+  </ul>
 
   <div class="main">
 
   <div class="container_intro" style="padding-bottom: 60px">
-    <!-- <ul class="fly-in-text hidden">
-      <li>S</li>
-      <li>n</li>
-      <li>e</li>
-      <li>h</li>
-      <li>e</li>
-      <li>s</li>
-      <li>h</li>
-      <li> </li>
-      <li> </li>
-      <li> </li>
-      <li> </li>
-      <li>N</li>
-      <li>a</li>
-      <li>g</li>
-    </ul> -->
+
     <p>
       I am a performing musician and composer currently based in Baltimore, USA. I mainly play the sitar, exploring primarily North Indian classical music, among others things such as blues and bluegrass. I also compose and produce music, drawing inspiration from Indian classical, electronic, and Western classical music.
     </p>
@@ -60,7 +42,7 @@
       <li><a href="#" onclick='window.open("press.html");return false;' style="color:#ffffff;">Press</a></li>
     </ul>
 
-    <p style="padding-top:40px;font-family:serif;font-style:italics;font-size:19px;">This site was made using <a href="#" onclick='window.open("https://jquery.com/");return false;' style="color:#ffffff;">jQuery</a> and <a href="#" onclick='window.open("https://p5js.org/");return false;' style="color:#ffffff;">p5js</a></p>
+    <p class="credits">This site was made using <a href="#" onclick='window.open("https://jquery.com/");return false;' style="color:#ffffff;">jQuery</a> and <a href="#" onclick='window.open("https://p5js.org/");return false;' style="color:#ffffff;">p5js</a></p>
   </div>
 
   </div>
@@ -91,9 +73,7 @@
     var window_scl;
     var height_scl;
     var bg;
-    // function windowResized() {
-    //   resizeCanvas(windowWidth, windowHeight*2);
-    // }
+
 
     function preload() {
       bg = loadImage('css/self_with_sitar.png');
@@ -102,14 +82,12 @@
     function setup(){
       // bg = loadImage('css/self_with_sitar.png');
       console.log('image size '+ bg.width, bg.height); /* 1080, 1112 */
-      console.log('window size '+ windowWidth, windowHeight); /* 1440, 797 */
+      console.log('window size '+ windowWidth, windowHeight); /* 1440, 797; 393, 658 */
       // init_ww = bg.width
       // init_wh = bg.height
       bg_scl = bg.width/bg.height;
       height_scl = bg.height/windowHeight;
-      // console.log(windowWidth, windowHeight);
-      // canvas = createCanvas(windowWidth, windowHeight*2);
-      // canvas = createCanvas(windowHeight*bg_scl, windowHeight);
+
       if (windowWidth > 768) {
         canvas = createCanvas(windowWidth, windowWidth/bg_scl);
       }
@@ -119,8 +97,7 @@
 
       canvas.position(0, 0);
       canvas.style('z-index', '-1');
-      // tint(100, 200);
-      // image(bg, 0, 0, 1000, 1000);
+
       bg = loadImage('css/self_with_sitar.png');
       cols = floor(windowWidth / scl);
       rows = floor((windowHeight*2) / scl);
@@ -133,16 +110,13 @@
 
     function windowResized() {
 
-      // resizeCanvas(windowHeight*bg_scl, windowHeight);
+
       if (windowWidth > 768) {
-        // resizeCanvas(windowWidth, windowWidth/bg_scl);
         resizeCanvas(windowWidth, windowWidth/bg_scl);
       }
       else {
         resizeCanvas(windowWidth, windowHeight);
       }
-
-      console.log(windowWidth, windowHeight);
 
       }
 
@@ -150,17 +124,14 @@
     function draw() {
 
       tint(195, 3.8) //215, 3.8; 205, 3.8
-      // tint(255, 127); // Display at half opacity
-      // image(bg, 0, 0, windowWidth, windowHeight)
-      // image(bg, 0, 0, windowWidth, windowWidth/bg_scl)
+
       if (windowWidth > 768) { //868, bg.width
         image(bg, 0, 0, windowWidth, windowWidth/bg_scl)
-        // image(bg, 0, 0, windowWidth, windowHeight*2)
-        // image(bg, 0, 0, windowHeight*bg_scl, windowHeight)
+
       }
       else {
         image(bg, 0, 0, windowHeight*bg_scl, windowHeight)
-        // image(bg, 0, 0, bg.width, windowHeight*2)
+
       }
 
       // image(bg, 0, 0);
