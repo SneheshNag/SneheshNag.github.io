@@ -298,7 +298,7 @@ content: url("swan_sitar_1.svg")
   .container_intro {
     /* display: flex; */
     /* flex-basis: 80%; */
-    width:45%;
+    width:65%;
     margin:auto;
     float: left;
     text-align: left;
@@ -311,7 +311,7 @@ content: url("swan_sitar_1.svg")
     color: #ffffff;
 
     /* color: #000000; */
-    margin-left: 150px;
+    /* margin-left: 120px; */
     padding-top: 200px;
     /* top: -400px; */
     }
