@@ -262,7 +262,7 @@ content: url("swan_sitar_1.svg")
   }
 
   .container_intro {
-    width:90%;
+    width:93%;
     /* margin:auto; */
     float: left;
     text-align: left;
@@ -274,14 +274,14 @@ content: url("swan_sitar_1.svg")
     font-family: "EB Garamond", serif;
     /* font-family: serif; */
     font-style: italic;
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
     /* color: #000000; */
   }
 
   .fly-in-text{
-    left:50%;
-    padding-top:30px;
+    left:45%;
+    padding-top:25px;
   }
 
   .fly-in-text li{
@@ -289,13 +289,13 @@ content: url("swan_sitar_1.svg")
   }
 
   ul.burst {
-    font-size:16px;
-    padding-top:5px;
+    font-size:18px;
+    padding-top:3px;
   }
 
   p.credits {
     font-size:13px;
-    padding-top:20px;
+    padding-top:15px;
   }
 }
 
