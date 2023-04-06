@@ -86,26 +86,35 @@
     var particles = [];
     var flowfield;
     let sitarImage;
+    // let init_ww;
+    // let init_wh;
+    let window_scl;
 
     var bg;
     function windowResized() {
       resizeCanvas(windowWidth, windowHeight*2);
     }
 
-    // function preload() {
-    //   bg = loadImage('css/self_with_sitar.png');
-    // }
+    function preload() {
+      bg = loadImage('css/self_with_sitar.png');
+    }
 
     function setup(){
-
-      canvas = createCanvas(windowWidth, windowHeight*2);
+      // bg = loadImage('css/self_with_sitar.png');
+      console.log(bg.width, bg.height);
+      // init_ww = bg.width
+      // init_wh = bg.height
+      window_scl = bg.width/bg.height;
+      // console.log(windowWidth, windowHeight);
+      // canvas = createCanvas(windowWidth, windowHeight*2);
+      canvas = createCanvas(windowWidth, windowWidth/window_scl);
       canvas.position(0, 0);
       canvas.style('z-index', '-1');
       // tint(100, 200);
       // image(bg, 0, 0, 1000, 1000);
       bg = loadImage('css/self_with_sitar.png');
       cols = floor(windowWidth / scl);
-      rows = floor((windowHeight*4.2) / scl);
+      rows = floor((windowHeight*2) / scl);
       flowfield = new Array(cols * rows);
       // background(255);
       for (var i = 0; i < 400; i++) {
@@ -113,12 +122,20 @@
       }
     }
 
+    function windowResized() {
+
+      resizeCanvas(windowWidth, windowWidth/window_scl);
+      console.log(windowWidth, windowHeight);
+
+      }
+
 
     function draw() {
 
       tint(195, 3.8) //215, 3.8; 205, 3.8
       // tint(255, 127); // Display at half opacity
-      image(bg, 0, 0, windowWidth, windowHeight*2)
+      // image(bg, 0, 0, windowWidth, windowHeight*2)
+      image(bg, 0, 0, windowWidth, windowWidth/window_scl)
       // image(bg, 0, 0);
       var yoff = 0;
       for (var y = 0; y < rows; y++) {
